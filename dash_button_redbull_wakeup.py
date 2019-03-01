@@ -6,7 +6,7 @@ from datetime import datetime as dtime
 
 #MAC info for Dash Button
 INFO_DASH_REDBULL='fc:65:de:07:71:e0'
-SHUTDOWN_CMD='sudo shutdown -h now'
+WAKEUP_CMD='wakeonlan c8:cb:b8:c9:68:6d'
 
 print("Dash button rebull start")
 
@@ -16,7 +16,7 @@ def arp_detect(pkt):
             if pkt[ARP].hwsrc == INFO_DASH_REDBULL:
                 nowTime = dtime.now()
                 print("Button detected! at %s" % nowTime.strftime("%Y-%m-%d %H:%M:%S"))
-                process = subprocess.Popen(SHUTDOWN_CMD.split(), stdout=subprocess.PIPE)
+                process = subprocess.Popen(WAKEUP_CMD.split(), stdout=subprocess.PIPE)
                 output, error = process.communicate()
 
 if __name__ == '__main__':

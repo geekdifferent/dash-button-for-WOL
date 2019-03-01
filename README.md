@@ -1,5 +1,5 @@
-# dash-button-for-home-server
-dash-button-for-home-server
+# dash-button-for-WOL
+dash-button-for-WOL
 
 For Raspberry PI
 ```
