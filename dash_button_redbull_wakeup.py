@@ -6,6 +6,8 @@ from datetime import datetime as dtime
 
 #MAC info for Dash Button
 INFO_DASH_REDBULL='fc:65:de:07:71:e0'
+
+#wakeonlan command with MAC for server
 WAKEUP_CMD='wakeonlan c8:cb:b8:c9:68:6d'
 
 print("Dash button rebull start")

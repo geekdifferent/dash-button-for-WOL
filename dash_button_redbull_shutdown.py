@@ -6,6 +6,8 @@ from datetime import datetime as dtime
 
 #MAC info for Dash Button
 INFO_DASH_REDBULL='fc:65:de:07:71:e0'
+
+#shutdown command
 SHUTDOWN_CMD='sudo shutdown -h now'
 
 print("Dash button rebull start")
